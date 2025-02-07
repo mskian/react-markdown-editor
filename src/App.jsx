@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { createCommand, $createTextNode, $getRoot, $getSelection, $isRangeSelection } from 'lexical';
+import { PASTE_COMMAND, createCommand, $createTextNode, $getRoot, $getSelection, $isRangeSelection } from 'lexical';
 import { LexicalComposer } from '@lexical/react/LexicalComposer';
 import { ContentEditable } from '@lexical/react/LexicalContentEditable';
 import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin';
 import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin';
 import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin';
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext';
-import { FaCopy, FaBold, FaItalic, FaHeading, FaHighlighter, FaQuoteLeft, FaListUl, FaMarkdown, FaEye, FaGripLines, FaLink, FaImage } from 'react-icons/fa';
+import { FaCopy, FaBold, FaItalic, FaHeading, FaHighlighter, FaQuoteLeft, FaListUl, FaMarkdown, FaEye, FaGripLines, FaLink, FaImage, FaStrikethrough, FaCaretDown } from 'react-icons/fa';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 
@@ -113,6 +113,30 @@ function Editor() {
     );
   }, [editor]);
 
+  useEffect(() => {
+    return editor.registerCommand(
+      PASTE_COMMAND,
+      (event) => {
+        if (event.clipboardData) {
+          const text = event.clipboardData.getData('text/plain');
+          event.preventDefault();
+          editor.update(() => {
+            const selection = $getSelection();
+            if (!$isRangeSelection(selection)) return;
+            const lines = text.split('\n');
+            lines.forEach((line, index) => {
+              if (index > 0) selection.insertText('\n');
+              selection.insertText(line);
+            });
+          });
+          return true;
+        }
+        return false;
+      },
+      1
+    );
+  }, [editor]);
+
   const cleanHtml = marked(markdown, { breaks: true })
   .replace(/<\/?p>/g, '')
   .replace(/==(.*?)==/g, '<mark>$1</mark>');
@@ -135,8 +159,10 @@ function Editor() {
             <button className="button is-small is-link" onClick={() => insertMarkdown('*** ', false)}><FaGripLines /></button>
             <button className="button is-small is-danger" onClick={() => insertMarkdown('> ', false)}><FaQuoteLeft /></button>
             <button className="button is-small is-success" onClick={() => insertMarkdown('- ', false)}><FaListUl /></button>
+            <button className="button is-small is-success" onClick={() => insertMarkdown('~~', true)}><FaStrikethrough /></button>
             <button className="button is-small is-link" onClick={() => insertMarkdown('[Text](https://medit.pages.dev/)', false)}><FaLink /></button>
             <button className="button is-small is-warning" onClick={() => insertMarkdown('![Alt text](/favicon.ico)', false)}><FaImage /></button>
+            <button className="button is-small is-warning" onClick={() => insertMarkdown('<br>', false)}><FaCaretDown /></button>
             <button className="button is-small is-success" onClick={copyToClipboard}><FaCopy /></button>
           </div>
 
