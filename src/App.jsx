@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { createCommand, $getRoot, $getSelection, $isRangeSelection } from 'lexical';
+import { createCommand, $createTextNode, $getRoot, $getSelection, $isRangeSelection } from 'lexical';
 import { LexicalComposer } from '@lexical/react/LexicalComposer';
 import { ContentEditable } from '@lexical/react/LexicalContentEditable';
 import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin';
@@ -94,7 +94,7 @@ function Editor() {
       const text = selection.getTextContent();
       const newText = wrapText ? `${symbol}${text}${symbol}` : `${symbol}${text}`;
 
-      selection.insertRawText(newText);
+      selection.insertNodes([$createTextNode(newText)]);
     });
   };
 
@@ -104,7 +104,7 @@ function Editor() {
       (payload) => {
         editor.update(() => {
           const selection = editor.getSelection();
-          if (!selection) return;
+          if (!$isRangeSelection(selection)) return;
           selection.insertText(payload);
         });
         return true;
