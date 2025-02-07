@@ -1,0 +1,148 @@
+
+@import 'bulma/css/bulma.min.css';
+
+html, body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: "Catamaran", serif;
+}
+body {
+  background: #f5ebb4;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Catamaran", serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+	font-smooth: always; 
+}
+.card {
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  font-family: "Catamaran", serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.alert {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 4px;
+  animation: fadeOut 3s ease-in-out forwards;
+}
+
+.alert-success {
+  background-color: #ebffeb;
+  color: #257225;
+  border: 1px solid #b7efb7;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.content {
+  word-break: break-word;
+  white-space: pre-wrap;
+  color: #000;
+  font-family: "Catamaran", serif;
+  line-height: 1.6;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+	font-smooth: always; 
+}
+.content h1, 
+.content h2, 
+.content h3, 
+.content h4, 
+.content h5, 
+.content h6 {
+  overflow-wrap: break-word;
+  color: #000;
+  font-family: "Catamaran", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always; 
+}
+
+.textarea {
+  overflow: scroll;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 100%;
+  font-family: "Catamaran", serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+	font-smooth: always; 
+}
+pre, code {
+  word-break: break-word;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+	font-smooth: always; 
+}
+blockquote {
+  word-break: break-word;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-family: "Catamaran", serif;
+  border-left: 4px solid #cccccc;
+  color: #e6c7c7;
+}
+.content strong, 
+.content b, 
+.content em, 
+.content i, 
+.content s, 
+.content strike, 
+.content u {
+  color: black !important;
+  line-height: 1.6;
+}
+.content p {
+  word-break: break-word;
+  white-space: pre-wrap;
+  font-family: "Catamaran", serif;
+  line-height: 1.6;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+	font-smooth: always; 
+}
+.content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.content ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+.content ul li,
+.content ol li {
+  margin-bottom: 1px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(238, 163, 51, 0.302);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(238, 252, 112, 0.5);
+}
+mark {
+  background-color: yellow;
+  color: black;
+  padding: 2px 4px;
+  border-radius: 3px;
+}

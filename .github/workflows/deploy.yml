@@ -1,0 +1,21 @@
+name: cloudflare-pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: ./.github/actions/prepare
+      - name: Use pnpm to build site
+        run: pnpm build
+      - name: Deploy to CF Pages
+        uses: cloudflare/wrangler-action@v3.13.1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=medit --commit-dirty=true
