@@ -43,8 +43,8 @@ importers:
         specifier: ^19.1.5
         version: 19.1.5(@types/react@19.1.5)
       '@vitejs/plugin-react':
-        specifier: ^4.4.1
-        version: 4.4.1(vite@6.3.5)
+        specifier: ^4.5.0
+        version: 4.5.0(vite@6.3.5)
       eslint:
         specifier: ^9.27.0
         version: 9.27.0
@@ -450,6 +450,9 @@ packages:
     peerDependencies:
       yjs: '>=13.5.22'
 
+  '@rolldown/pluginutils@1.0.0-beta.9':
+    resolution: {integrity: sha512-e9MeMtVWo186sgvFFJOPGy7/d2j2mZhLJIdVW0C/xDluuOvymEATqz6zKsP0ZmXGzQtqlyjz5sC1sYQUoJG98w==}
+
   '@rollup/rollup-android-arm-eabi@4.40.0':
     resolution: {integrity: sha512-+Fbls/diZ0RDerhE8kyC6hjADCXA1K4yVNlH0EYfd2XjyH0UGgzaQ8MlT0pCXAThfxv3QUAczHaL+qSv1E4/Cg==}
     cpu: [arm]
@@ -579,8 +582,8 @@ packages:
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
-  '@vitejs/plugin-react@4.4.1':
-    resolution: {integrity: sha512-IpEm5ZmeXAP/osiBXVVP5KjFMzbWOonMs0NaQQl+xYnUAcq4oHUBsF2+p4MgKWG4YMmFYJU8A6sxRPuowllm6w==}
+  '@vitejs/plugin-react@4.5.0':
+    resolution: {integrity: sha512-JuLWaEqypaJmOJPLWwO335Ig6jSgC1FTONCWAxnqcQthLTK/Yc9aH6hr9z/87xciejbQcnP3GnA1FWUSWeXaeg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0 || ^6.0.0
@@ -1941,6 +1944,8 @@ snapshots:
       lexical: 0.31.2
       yjs: 13.6.23
 
+  '@rolldown/pluginutils@1.0.0-beta.9': {}
+
   '@rollup/rollup-android-arm-eabi@4.40.0':
     optional: true
 
@@ -2037,11 +2042,12 @@ snapshots:
   '@types/trusted-types@2.0.7':
     optional: true
 
-  '@vitejs/plugin-react@4.4.1(vite@6.3.5)':
+  '@vitejs/plugin-react@4.5.0(vite@6.3.5)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.10)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.10)
+      '@rolldown/pluginutils': 1.0.0-beta.9
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
       vite: 6.3.5
