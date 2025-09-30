@@ -10,10 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lexical/react": "^0.35.0",
+    "@lexical/react": "^0.36.1",
     "bulma": "^1.0.4",
     "dompurify": "^3.2.7",
-    "lexical": "^0.35.0",
+    "lexical": "^0.36.1",
     "marked": "^15.0.12",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
