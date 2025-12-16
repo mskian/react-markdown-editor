@@ -15,8 +15,8 @@
     "dompurify": "^3.3.1",
     "lexical": "^0.38.2",
     "marked": "^15.0.12",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
