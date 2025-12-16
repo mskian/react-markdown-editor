@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@lexical/react':
         specifier: ^0.38.2
-        version: 0.38.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(yjs@13.6.23)
+        version: 0.38.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(yjs@13.6.23)
       bulma:
         specifier: ^1.0.4
         version: 1.0.4
@@ -24,14 +24,14 @@ importers:
         specifier: ^15.0.12
         version: 15.0.12
       react:
-        specifier: ^19.2.1
-        version: 19.2.1
+        specifier: ^19.2.3
+        version: 19.2.3
       react-dom:
-        specifier: ^19.2.1
-        version: 19.2.1(react@19.2.1)
+        specifier: ^19.2.3
+        version: 19.2.3(react@19.2.3)
       react-icons:
         specifier: ^5.5.0
-        version: 5.5.0(react@19.2.1)
+        version: 5.5.0(react@19.2.3)
     devDependencies:
       '@eslint/js':
         specifier: ^9.39.2
@@ -1317,10 +1317,10 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  react-dom@19.2.1:
-    resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
+  react-dom@19.2.3:
+    resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
     peerDependencies:
-      react: ^19.2.1
+      react: ^19.2.3
 
   react-error-boundary@6.0.0:
     resolution: {integrity: sha512-gdlJjD7NWr0IfkPlaREN2d9uUZUlksrfOx7SX62VRerwXbMY6ftGCIZua1VG1aXFNOimhISsTq+Owp725b9SiA==}
@@ -1339,8 +1339,8 @@ packages:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react@19.2.1:
-    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
+  react@19.2.3:
+    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
     engines: {node: '>=0.10.0'}
 
   reflect.getprototypeof@1.0.10:
@@ -1835,18 +1835,18 @@ snapshots:
       '@floating-ui/core': 1.7.3
       '@floating-ui/utils': 0.2.10
 
-  '@floating-ui/react-dom@2.1.6(react-dom@19.2.1(react@19.2.1))(react@19.2.1)':
+  '@floating-ui/react-dom@2.1.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@floating-ui/dom': 1.7.4
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
-  '@floating-ui/react@0.27.16(react-dom@19.2.1(react@19.2.1))(react@19.2.1)':
+  '@floating-ui/react@0.27.16(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@floating-ui/react-dom': 2.1.6(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      '@floating-ui/react-dom': 2.1.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@floating-ui/utils': 0.2.10
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
       tabbable: 6.2.0
 
   '@floating-ui/utils@0.2.10': {}
@@ -1905,7 +1905,7 @@ snapshots:
       lexical: 0.38.2
       prismjs: 1.30.0
 
-  '@lexical/devtools-core@0.38.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)':
+  '@lexical/devtools-core@0.38.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@lexical/html': 0.38.2
       '@lexical/link': 0.38.2
@@ -1913,8 +1913,8 @@ snapshots:
       '@lexical/table': 0.38.2
       '@lexical/utils': 0.38.2
       lexical: 0.38.2
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
   '@lexical/dragon@0.38.2':
     dependencies:
@@ -1989,10 +1989,10 @@ snapshots:
       '@lexical/utils': 0.38.2
       lexical: 0.38.2
 
-  '@lexical/react@0.38.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(yjs@13.6.23)':
+  '@lexical/react@0.38.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(yjs@13.6.23)':
     dependencies:
-      '@floating-ui/react': 0.27.16(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
-      '@lexical/devtools-core': 0.38.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      '@floating-ui/react': 0.27.16(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@lexical/devtools-core': 0.38.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@lexical/dragon': 0.38.2
       '@lexical/extension': 0.38.2
       '@lexical/hashtag': 0.38.2
@@ -2009,9 +2009,9 @@ snapshots:
       '@lexical/utils': 0.38.2
       '@lexical/yjs': 0.38.2(yjs@13.6.23)
       lexical: 0.38.2
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
-      react-error-boundary: 6.0.0(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
+      react-error-boundary: 6.0.0(react@19.2.3)
     transitivePeerDependencies:
       - yjs
 
@@ -3008,25 +3008,25 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  react-dom@19.2.1(react@19.2.1):
+  react-dom@19.2.3(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
       scheduler: 0.27.0
 
-  react-error-boundary@6.0.0(react@19.2.1):
+  react-error-boundary@6.0.0(react@19.2.3):
     dependencies:
       '@babel/runtime': 7.26.7
-      react: 19.2.1
+      react: 19.2.3
 
-  react-icons@5.5.0(react@19.2.1):
+  react-icons@5.5.0(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
 
   react-is@16.13.1: {}
 
   react-refresh@0.17.0: {}
 
-  react@19.2.1: {}
+  react@19.2.3: {}
 
   reflect.getprototypeof@1.0.10:
     dependencies:
