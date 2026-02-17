@@ -21,8 +21,8 @@ importers:
         specifier: ^0.40.0
         version: 0.40.0
       marked:
-        specifier: ^15.0.12
-        version: 15.0.12
+        specifier: ^17.0.3
+        version: 17.0.3
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -1213,9 +1213,9 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  marked@15.0.12:
-    resolution: {integrity: sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==}
-    engines: {node: '>= 18'}
+  marked@17.0.3:
+    resolution: {integrity: sha512-jt1v2ObpyOKR8p4XaUJVk3YWRJ5n+i4+rjQopxvV32rSndTJXvIzuUdWWIy/1pFQMkQmvTXawzDNqOH/CUmx6A==}
+    engines: {node: '>= 20'}
     hasBin: true
 
   math-intrinsics@1.1.0:
@@ -2908,7 +2908,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  marked@15.0.12: {}
+  marked@17.0.3: {}
 
   math-intrinsics@1.1.0: {}
 
