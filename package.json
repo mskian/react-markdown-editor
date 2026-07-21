@@ -15,7 +15,7 @@
     "dompurify": "^3.4.12",
     "lexical": "^0.45.0",
     "marked": "^15.0.12",
-    "react": "^19.2.7",
+    "react": "^19.2.8",
     "react-dom": "^19.2.7",
     "react-icons": "^5.7.0"
   },
