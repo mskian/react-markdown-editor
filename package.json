@@ -12,7 +12,7 @@
   "dependencies": {
     "@lexical/react": "^0.48.0",
     "bulma": "^1.0.4",
-    "dompurify": "^3.4.12",
+    "dompurify": "^3.4.17",
     "lexical": "^0.48.0",
     "marked": "^15.0.12",
     "react": "^19.2.8",
