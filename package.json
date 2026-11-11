@@ -14,7 +14,7 @@
     "bulma": "^1.0.4",
     "dompurify": "^3.4.17",
     "lexical": "^0.53.0",
-    "marked": "^15.0.12",
+    "marked": "^18.2.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-icons": "^5.7.0"
